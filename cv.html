@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Harsh Vijay - Curriculum Vitae</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Inter", sans-serif;
+        line-height: 1.6;
+      }
+      .gradient-bg {
+        background: linear-gradient(
+          135deg,
+          #1e3a8a 0%,
+          #1e40af 50%,
+          #3b82f6 100%
+        );
+      }
+      .card-hover {
+        transition: all 0.3s ease;
+      }
+      .card-hover:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+      }
+      .section-divider {
+        background: linear-gradient(90deg, transparent, #e5e7eb, transparent);
+        height: 1px;
+        margin: 3rem 0;
+      }
+      body {
+        -webkit-print-color-adjust: exact;
+      }
+      .no-print {
+        display: none;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-50 text-gray-800">
+    <!-- Navbar -->
+    <nav class="fixed top-0 w-full z-50 bg-blue-900 shadow-md">
+      <div
+        class="container mx-auto px-6 max-w-6xl flex items-center justify-between py-4"
+      >
+        <!-- Logo / Name -->
+        <a href="/" class="text-2xl font-bold tracking-wide text-white"
+          >Harsh Vijay</a
+        >
+
+        <!-- Desktop Menu -->
+        <div class="hidden md:flex space-x-8 text-sm font-medium text-white">
+          <a href="/" class="hover:text-blue-200 transition-colors">Home</a>
+          <a href="cv.html" class="hover:text-blue-200 text-blue-200 transition-colors"
+            >Curriculum Vitae</a
+          >
+          <a href="beyond.html" class="hover:text-blue-200 transition-colors"
+            >Beyond the CV</a
+          >
+        </div>
+
+        <!-- Mobile Hamburger -->
+        <button id="menu-btn" class="md:hidden focus:outline-none text-white">
+          <i class="fas fa-bars text-2xl"></i>
+        </button>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="hidden md:hidden bg-blue-900">
+        <div
+          class="flex flex-col space-y-4 px-6 py-4 text-sm font-medium text-white"
+        >
+          <a href="/" class="hover:text-blue-200 transition-colors">Home</a>
+          <a href="cv.html" class="hover:text-blue-200 text-blue-200 transition-colors"
+            >Curriculum Vitae</a
+          >
+          <a href="beyond.html" class="hover:text-blue-200 transition-colors"
+            >Beyond the CV</a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <script>
+      // Mobile Menu Toggle
+      const menuBtn = document.getElementById("menu-btn");
+      const mobileMenu = document.getElementById("mobile-menu");
+
+      menuBtn.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+    </script>
+
+      <div class="container mx-auto pt-28 max-w-6xl">
+        <div class="text-center mb-12">
+          <h2 class="text-5xl font-bold text-gray-800 mb-4">Curriculum Vitae</h2>
+          <div class="w-20 h-1 bg-blue-600 mx-auto"></div>
+        </div>
+        <div class="flex justify-center">
+        <a 
+    href="./public/Harsh_Vijay_CV.pdf" 
+    download="Harsh_Vijay_CV.pdf" 
+    class="
+        inline-flex items-center 
+        px-6 py-3 
+        bg-indigo-600 text-white 
+        font-semibold text-lg 
+        rounded-lg 
+        shadow-md hover:bg-indigo-700 
+        focus:outline-none focus:ring-4 focus:ring-indigo-500 focus:ring-opacity-50 
+        transition duration-300 ease-in-out
+    "
+>
+    <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path>
+    </svg>
+    Download CV
+</a>
+        </div>
+        <div>
+
+    <!-- Experience Section -->
+    <section class="py-16 bg-gray-50">
+      <div class="container mx-auto px-6 max-w-6xl">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl font-bold text-gray-800 mb-4">
+            Professional Experience
+          </h2>
+          <div class="w-20 h-1 bg-blue-600 mx-auto"></div>
+        </div>
+        <div class="space-y-8">
+
+          <!-- Other Experience -->
+          <div class="grid md:grid-cols-2 gap-6">
+            <div class="flex justify-center flex-col bg-white rounded-lg shadow-lg p-6 card-hover">
+              <h3 class="text-xl font-semibold text-gray-800 mb-2">
+                Investment Associate Intern
+              </h3>
+              <p class="text-blue-600 font-medium mb-1">Multiply Ventures</p>
+              <p class="text-sm text-gray-500 mb-3">Jun 2025 - Aug 2025</p>
+              <ul class="text-gray-600 space-y-2 text-sm ">
+                <li>
+                  • Led the Voice AI thesis development by engaging 15+ experts to map workflow pain points & investment potential
+                </li>
+                <li>• Evaluated 6 early-stage startups independently, analyzing models, markets, & scale to guide investment judgment</li>
+                <li>• Expanded deal flow by sourcing 30+ startups and partnering with 12+ investors/bankers to boost pipeline quality</li>
+              </ul>
+              <p class="text-gray-600 text-sm">
+              </p>
+            </div>
+            <div class="bg-white rounded-lg shadow-lg p-6 card-hover">
+              <h3 class="text-xl font-semibold text-gray-800 mb-2">
+                Founder Scouting Intern
+              </h3>
+              <p class="text-blue-600 font-medium mb-1">Antler</p>
+              <p class="text-sm text-gray-500 mb-3">Feb 2025 - Apr 2025</p>
+              <p class="text-gray-600 text-sm">
+              <ul class="text-gray-600 space-y-2 text-sm">
+                <li>
+                  • Assessed 150+ startups, maintaining structured trackers with sector descriptions, & preliminary investment notes
+                </li>
+                <li>• Engaged in 20+ founder pitch sessions (incl. in-person at Antler Residency), compiling DD notes and market scans</li>
+                <li>• Mapped 200+ co-investors by cheque size, sector & stage, creating tagging system to streamline follow-on rounds</li>
+                <li>• Refined thesis development and founder outreach by curating a portfolio sheet for 30+ startups with 10+ insights</li>
+              </ul>
+              </p>
+            </div>
+          </div>
+
+          <!-- Investment Analyst Intern -->
+          <div class="bg-white rounded-lg shadow-lg p-8 card-hover">
+            <div
+              class="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-4"
+            >
+              <div>
+                <h3 class="text-xl font-semibold text-gray-800">
+                  Investment Associate Intern
+                </h3>
+                <p class="text-blue-600 font-medium">Ortella Global Capital</p>
+              </div>
+              <div class="text-sm text-gray-500 mt-2 sm:mt-0">
+                Jul 2024 - Jan 2025
+              </div>
+            </div>
+            <div class="grid md:grid-cols-2 gap-6">
+              <ul class="text-gray-600 space-y-2 text-sm">
+                <li>
+                  • Spearheaded ₹300Cr fund’s 360° impact framework aligned with IRIS+ & TCFD defining metrics across impact areas
+                </li>
+                <li>• Designed post-investment tracking & scoring framework, enabling structured impact reports to LPs & stakeholders</li>
+                <li>• Executed market research & 50+ competitor analyses across 4 sectors, identifying new fund-level investing themes</li>
+              </ul>
+              <ul class="text-gray-600 space-y-2 text-sm">
+                <li>• Led OGC × Entrackr offline startup program, curating content, speakers, and formats to drive community growth</li>
+                <li>• Built BD playbooks & strategic roadmaps for portfolio firms to enhance revenues and identify growth partnerships</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Venture Capital Intern -->
+          <div class="bg-white rounded-lg shadow-lg p-8 card-hover">
+            <div
+              class="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-4"
+            >
+              <div>
+                <h3 class="text-xl font-semibold text-gray-800">
+                  Venture Capital Intern
+                </h3>
+                <p class="text-blue-600 font-medium">SucSEED Ventures</p>
+              </div>
+              <div class="text-sm text-gray-500 mt-2 sm:mt-0">
+                May 2024 - Jun 2024
+              </div>
+            </div>
+            <div class="grid md:grid-cols-2 gap-6">
+              <ul class="text-gray-600 space-y-2 text-sm">
+                <li>
+                  • Orchestrated end-to-end project execution for S&A launch, building consensus with founding team & stakeholders
+                </li>
+                <li>• Conducted deep market & competitor research to identify service gaps, shaping S&A’s GTM & positioning strategy</li>
+              </ul>
+              <ul class="text-gray-600 space-y-2 text-sm">
+                <li>
+                  • Developed robust financial models (revenue/expense forecasts) & designed pricing strategy for new venture (Scalers & Augmentors)
+                </li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section class="py-16 bg-white">
+      <div class="container mx-auto px-6 max-w-6xl">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl font-bold text-gray-800 mb-4">
+            Key Achievements
+          </h2>
+          <div class="w-20 h-1 bg-blue-600 mx-auto"></div>
+        </div>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div
+            class="bg-gradient-to-br from-blue-50 to-blue-100 p-6 rounded-lg card-hover"
+          >
+            <div class="flex items-center mb-3">
+              <i class="fas fa-trophy text-blue-600 text-2xl mr-3"></i>
+              <h3 class="font-semibold text-gray-800">CFA Level 1</h3>
+            </div>
+            <p class="text-gray-600 text-sm">
+              Cleared in first attempt with 90+ percentile score
+            </p>
+          </div>
+          <div
+            class="bg-gradient-to-br from-green-50 to-green-100 p-6 rounded-lg card-hover"
+          >
+            <div class="flex items-center mb-3">
+              <i class="fas fa-medal text-green-600 text-2xl mr-3"></i>
+              <h3 class="font-semibold text-gray-800">NSEP National Topper</h3>
+            </div>
+            <p class="text-gray-600 text-sm">
+              Ranked 1/21 out of 11,300+ students in 2019
+            </p>
+          </div>
+          <div
+            class="bg-gradient-to-br from-purple-50 to-purple-100 p-6 rounded-lg card-hover"
+          >
+            <div class="flex items-center mb-3">
+              <i
+                class="fas fa-graduation-cap text-purple-600 text-2xl mr-3"
+              ></i>
+              <h3 class="font-semibold text-gray-800">Duke Scholarship</h3>
+            </div>
+            <p class="text-gray-600 text-sm">
+              Scholarship recipient from Duke University, USA
+            </p>
+          </div>
+          <div
+            class="bg-gradient-to-br from-orange-50 to-orange-100 p-6 rounded-lg card-hover"
+          >
+            <div class="flex items-center mb-3">
+              <i class="fas fa-users text-orange-600 text-2xl mr-3"></i>
+              <h3 class="font-semibold text-gray-800">VCIC Selection</h3>
+            </div>
+            <p class="text-gray-600 text-sm">
+              Selected from 600+ students to represent FMS Delhi
+            </p>
+          </div>
+          <div
+            class="bg-gradient-to-br from-red-50 to-red-100 p-6 rounded-lg card-hover"
+          >
+            <div class="flex items-center mb-3">
+              <i class="fas fa-atom text-red-600 text-2xl mr-3"></i>
+              <h3 class="font-semibold text-gray-800">NIUS Selection</h3>
+            </div>
+            <p class="text-gray-600 text-sm">
+              1 of 72 students selected nationally for TIFR program
+            </p>
+          </div>
+          <div
+            class="bg-gradient-to-br from-indigo-50 to-indigo-100 p-6 rounded-lg card-hover"
+          >
+            <div class="flex items-center mb-3">
+              <i class="fas fa-clock text-indigo-600 text-2xl mr-3"></i>
+              <h3 class="font-semibold text-gray-800">Fast-Track Graduate</h3>
+            </div>
+            <p class="text-gray-600 text-sm">
+              Completed M.Sc. Physics in 3.5 years (6 months early)
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="py-16 bg-gray-50">
+      <div class="container mx-auto px-6 max-w-6xl">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl font-bold text-gray-800 mb-4">
+            Core Competencies
+          </h2>
+          <div class="w-20 h-1 bg-blue-600 mx-auto"></div>
+        </div>
+        <div class="grid lg:grid-cols-2 gap-8">
+          <div class="bg-white rounded-lg shadow-lg p-8">
+            <h3
+              class="text-xl font-semibold text-gray-800 mb-6 flex items-center"
+            >
+              <i class="fas fa-cogs text-blue-600 mr-3"></i>
+              Technical Skills
+            </h3>
+            <div class="grid grid-cols-2 gap-4">
+              <div class="bg-blue-50 p-3 rounded text-center">
+                <div class="font-medium text-gray-800">Financial Modeling</div>
+              </div>
+              <div class="bg-green-50 p-3 rounded text-center">
+                <div class="font-medium text-gray-800">Investment Analysis</div>
+              </div>
+              <div class="bg-purple-50 p-3 rounded text-center">
+                <div class="font-medium text-gray-800">Due Diligence</div>
+              </div>
+              <div class="bg-orange-50 p-3 rounded text-center">
+                <div class="font-medium text-gray-800">Research & Analysis</div>
+              </div>
+              <div class="bg-red-50 p-3 rounded text-center">
+                <div class="font-medium text-gray-800">Strategic Thinking</div>
+              </div>
+              <div class="bg-indigo-50 p-3 rounded text-center">
+                <div class="font-medium text-gray-800">Valuation</div>
+              </div>
+            </div>
+          </div>
+          <div class="bg-white rounded-lg shadow-lg p-8">
+            <h3
+              class="text-xl font-semibold text-gray-800 mb-6 flex items-center"
+            >
+              <i class="fas fa-users text-green-600 mr-3"></i>
+              Leadership & Soft Skills
+            </h3>
+            <div class="grid grid-cols-2 gap-4">
+              <div class="bg-blue-50 p-3 rounded text-center">
+                <div class="font-medium text-gray-800">Team Collaboration</div>
+              </div>
+              <div class="bg-green-50 p-3 rounded text-center">
+                <div class="font-medium text-gray-800">Communication</div>
+              </div>
+              <div class="bg-purple-50 p-3 rounded text-center">
+                <div class="font-medium text-gray-800">Problem-Solving</div>
+              </div>
+              <div class="bg-orange-50 p-3 rounded text-center">
+                <div class="font-medium text-gray-800">Leadership</div>
+              </div>
+              <div class="bg-red-50 p-3 rounded text-center">
+                <div class="font-medium text-gray-800">Adaptability</div>
+              </div>
+              <div class="bg-indigo-50 p-3 rounded text-center">
+                <div class="font-medium text-gray-800">
+                  Relationship Building
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="py-16 bg-gray-50">
+      <div class="container mx-auto px-6 max-w-6xl">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl font-bold text-gray-800 mb-4">Education</h2>
+          <div class="w-20 h-1 bg-blue-600 mx-auto"></div>
+        </div>
+        <div class="space-y-6">
+          <div class="bg-white rounded-lg shadow-lg p-8 card-hover">
+            <div
+              class="flex flex-col md:flex-row md:items-center md:justify-between"
+            >
+              <div>
+                <h3 class="text-xl font-semibold text-gray-800">
+                  Master of Business Administration (MBA)
+                </h3>
+                <p class="text-blue-600 font-medium">
+                  Faculty of Management Studies (FMS), Delhi
+                </p>
+                <p class="text-gray-600">Major: Finance & Strategy</p>
+              </div>
+              <div class="text-right mt-4 md:mt-0">
+                <p class="text-gray-500">Expected: April 2026</p>
+                <p class="text-sm text-gray-500">Class of 2026</p>
+              </div>
+            </div>
+          </div>
+          <div class="bg-white rounded-lg shadow-lg p-8 card-hover">
+            <div
+              class="flex flex-col md:flex-row md:items-center md:justify-between"
+            >
+              <div>
+                <h3 class="text-xl font-semibold text-gray-800">
+                  Master of Science (M.Sc.) in Physics
+                </h3>
+                <p class="text-blue-600 font-medium">BITS Pilani, Goa Campus</p>
+                <p class="text-gray-600">
+                  Integrated 5-year program completed in 3.5 years
+                </p>
+              </div>
+              <div class="text-right mt-4 md:mt-0">
+                <p class="text-gray-500">January 2022</p>
+                <!-- <p class="text-sm text-green-600 font-medium">Top Performer</p> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="py-16 gradient-bg text-white">
+      <div class="container mx-auto px-6 max-w-6xl text-center">
+        <h2 class="text-3xl font-bold mb-4">Let's Connect</h2>
+        <p class="text-xl text-blue-100 mb-8">
+          Interested in discussing Private Equity opportunities or just want to
+          connect?
+        </p>
+        <div
+          class="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-8"
+        >
+          <a
+            href="mailto:harsh.vi25@fms.edu"
+            class="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-blue-50 transition-colors flex items-center"
+          >
+            <i class="fas fa-envelope mr-2"></i>
+            Email Me
+          </a>
+          <div class="flex items-center text-blue-100">
+            <i class="fas fa-map-marker-alt mr-2"></i>
+            <span>New Delhi, India</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container px-6 max-w-6xl w-full text-center"></div>
+        <p class="text-gray-400">
+          &copy; 2025 Harsh Vijay. Built with passion for finance and continuous
+          learning.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

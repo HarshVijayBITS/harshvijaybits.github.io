@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Harsh Vijay - Beyond the CV</title>
+    <!-- <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    /> -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+      body {
+        font-family: "Inter", sans-serif;
+        line-height: 1.6;
+        background-color: white;
+      }
+      .gradient-bg {
+        background: linear-gradient(
+          135deg,
+          #1e3a8a 0%,
+          #1e40af 50%,
+          #3b82f6 100%
+        );
+      }
+      .card-hover {
+        transition: all 0.3s ease;
+      }
+      .card-hover:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+      }
+      .section-divider {
+        background: linear-gradient(90deg, transparent, #e5e7eb, transparent);
+        height: 1px;
+        margin: 3rem 0;
+      }
+      body {
+        -webkit-print-color-adjust: exact;
+      }
+      .no-print {
+        display: none;
+      }
+      /* poster css */
+      .poster {
+        width: 300px;
+        padding: 2%;
+        position: relative;
+        box-sizing: border-box;
+        background-color: #fff;
+        box-shadow: 0 3px 12px rgba(0, 0, 0, 0.2);
+        filter: saturate(70%) contrast(85%);
+      }
+      .poster img {
+        width: 100%;
+        /* min-width: 250px; */
+        display: block;
+        z-index: 1;
+      }
+      .poster:before,
+      .poster:after {
+        content: "";
+        width: 100%;
+        left: 0;
+        position: absolute;
+      }
+      .poster:before {
+        height: 4%;
+        bottom: -4%;
+        background-repeat: no-repeat;
+        background-image: linear-gradient(
+            177deg,
+            rgba(0, 0, 0, 0.22) 10%,
+            transparent 50%
+          ),
+          linear-gradient(-177deg, rgba(0, 0, 0, 0.22) 10%, transparent 50%);
+        background-size: 49% 100%;
+        background-position: 2% 0, 98% 0;
+      }
+      .poster:after {
+        height: 100%;
+        top: 0;
+        z-index: 2;
+        background-repeat: no-repeat;
+        background-image: linear-gradient(
+            to right,
+            rgba(255, 255, 255, 0.1) 0.5%,
+            rgba(0, 0, 0, 0.15) 1.2%,
+            transparent 1.2%
+          ),
+          linear-gradient(
+            to bottom,
+            rgba(255, 255, 255, 0.1) 0.5%,
+            rgba(0, 0, 0, 0.15) 1.2%,
+            transparent 1.2%
+          ),
+          linear-gradient(
+            to bottom,
+            rgba(255, 255, 255, 0.1) 0.5%,
+            rgba(0, 0, 0, 0.15) 1.2%,
+            transparent 1.2%
+          ),
+          linear-gradient(265deg, rgba(0, 0, 0, 0.2), transparent 10%),
+          linear-gradient(5deg, rgba(0, 0, 0, 0.2), transparent 15%),
+          linear-gradient(-5deg, rgba(0, 0, 0, 0.1), transparent 10%),
+          linear-gradient(5deg, rgba(0, 0, 0, 0.1), transparent 10%),
+          linear-gradient(-265deg, rgba(0, 0, 0, 0.2), transparent 10%),
+          linear-gradient(-5deg, rgba(0, 0, 0, 0.2), transparent 15%),
+          linear-gradient(266deg, rgba(0, 0, 0, 0.2), transparent 10%);
+        background-size: 50% 100%, 100% 33.3333%, 100% 33.3333%, 50% 33.3333%,
+          50% 33.3333%, 50% 33.3333%, 50% 33.3333%, 50% 33.3333%, 50% 33.3333%,
+          50% 33.3333%;
+        background-position: right top, left center, left bottom, left top,
+          left top, right top, left center, right center, right center,
+          left bottom;
+      }
+      /* .container {
+        width: 650px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        justify-items: center;
+        gap: 60px 30px;
+        margin: 0 auto;
+      }
+      .container > img {
+        width: 250px;
+      } */
+    </style>
+  </head>
+  <body class="bg-gray-50 text-gray-800">
+    <!-- Navbar -->
+    <nav class="fixed top-0 w-full z-50 bg-blue-900 shadow-md">
+      <div
+        class="container mx-auto px-6 max-w-6xl flex items-center justify-between py-4"
+      >
+        <!-- Logo / Name -->
+        <a href="/" class="text-2xl font-bold tracking-wide text-white"
+          >Harsh Vijay</a
+        >
+
+        <!-- Desktop Menu -->
+        <div class="hidden md:flex space-x-8 text-sm font-medium text-white">
+          <a href="/" class="hover:text-blue-200 transition-colors" >Home</a
+          >
+          <a href="cv.html" class="hover:text-blue-200 transition-colors"
+            >Curriculum Vitae</a
+          >
+          <a href="beyond.html" class="hover:text-blue-200 text-blue-200 transition-colors"
+            >Beyond the CV</a
+          >
+        </div>
+
+        <!-- Mobile Hamburger -->
+        <button id="menu-btn" class="md:hidden focus:outline-none text-white">
+          <i class="fas fa-bars text-2xl"></i>
+        </button>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="hidden md:hidden bg-blue-900">
+        <div
+          class="flex flex-col space-y-4 px-6 py-4 text-sm font-medium text-white"
+        >
+          <a href="/" class="hover:text-blue-200 transition-colors"
+            >Home</a
+          >
+          <a href="cv.html" class="hover:text-blue-200 transition-colors"
+            >Curriculum Vitae</a
+          >
+          <a href="beyond.html" class="hover:text-blue-200 text-blue-200 transition-colors"
+            >Beyond the CV</a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <script>
+      // Mobile Menu Toggle
+      const menuBtn = document.getElementById("menu-btn");
+      const mobileMenu = document.getElementById("mobile-menu");
+
+      menuBtn.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+    </script>
+
+    <!-- About Section -->
+    <section class="bg-white pt-32">
+      <div class="container mx-auto px-6 max-w-6xl">
+        <div class="text-center mb-12">
+          <h2 class="text-5xl font-bold text-gray-800 mb-4">Beyond the CV</h2>
+          <div class="w-20 h-1 bg-blue-600 mx-auto"></div>
+        </div>
+        <div>
+
+        <!-- family -->
+        <div
+          class="poster-container width-full flex flex-col md:flex-row-reverse justify-around items-center py-6 my-12 bg-amber-50 border border-amber-200 rounded-lg shadow-sm"
+        >
+          <div class="poster">
+            <img src="./public/i3.jpeg" alt="me singing" />
+          </div>
+          <label for=".poster" class="w-3/5">
+            <i
+              class="text-2xl text-center text-amber-700 font-bold italic leading-relaxed"
+            >
+              <p>With my biggest anchors — my parents</p>
+            </i>
+          </label>
+        </div>
+      </div>
+
+          <!-- singing -->
+          <div
+            class="poster-container width-full flex flex-col md:flex-row gap-4 justify-around items-center py-6 my-12 bg-pink-50 border border-pink-200 rounded-lg shadow-sm"
+          >
+            <div class="poster">
+              <img src="./public/i1.jpeg" alt="me singing" />
+            </div>
+            <label for=".poster" class="w-3/5">
+              <i
+                class="text-2xl text-pink-700 font-bold italic leading-relaxed"
+              >
+                <p>
+                  I sing sometimes — mostly for fun, sometimes for the people I
+                  love
+                </p>
+              </i>
+            </label>
+          </div>
+
+          <!-- gf -->
+          <div
+            class="poster-container width-full flex flex-col md:flex-row-reverse justify-around items-center py-6 my-12 bg-green-50 border border-green-200 rounded-lg shadow-sm"
+          >
+            <div class="poster">
+              <img src="./public/i4.jpeg" alt="me singing" />
+            </div>
+            <label for=".poster" class="w-3/5">
+              <i
+                class="text-2xl text-center text-green-700 font-bold italic leading-relaxed"
+              >
+                <p>With Diya</p>
+              </i>
+            </label>
+          </div>
+
+          <!-- gym -->
+          <div
+            class="poster-container width-full flex flex-col md:flex-row justify-around items-center py-6 my-12 bg-red-50 border border-red-200 rounded-lg shadow-sm"
+          >
+            <div class="poster">
+              <img src="./public/i2.jpeg" alt="me singing" />
+            </div>
+            <label for=".poster" class="w-3/5">
+              <i
+                class="text-2xl text-red-700 font-bold italic leading-relaxed"
+              >
+                <p>
+                  From a phase when I trained regularly — something I still
+                  love.
+                </p>
+              </i>
+            </label>
+          </div>
+          <!-- poems -->
+          <div
+            class="poster-container width-full flex flex-col md:flex-row justify-around items-center py-6 my-12 bg-fuchsia-50 border border-fuchsia-200 rounded-lg shadow-sm"
+          >
+            <div class="poster">
+              <img src="./public/i5.jpeg" alt="me singing" />
+            </div>
+            <label for=".poster" class="w-4/5 md:w-2/6">
+              <i
+                class="text-2xl text-fuchsia-700 font-bold italic leading-relaxed"
+              >
+                <p>
+                    Poetry has always been my way of pausing and observing.
+                </p>
+              </i>
+            </label>
+            <div class="poster">
+              <img src="./public/i6.jpeg" alt="me singing" />
+            </div>
+          </div>
+        </div>
+        </div>
+
+    <!-- Contact Section -->
+    <section class="py-16 gradient-bg text-white">
+      <div class="container mx-auto px-6 max-w-6xl text-center">
+        <h2 class="text-3xl font-bold mb-4">Let's Connect</h2>
+        <p class="text-xl text-blue-100 mb-8">
+          Interested in discussing Private Equity opportunities or just want to
+          connect?
+        </p>
+        <div
+          class="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-8"
+        >
+          <a
+            href="mailto:harsh.vi25@fms.edu"
+            class="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-blue-50 transition-colors flex items-center"
+          >
+            <i class="fas fa-envelope mr-2"></i>
+            Email Me
+          </a>
+          <div class="flex items-center text-blue-100">
+            <i class="fas fa-map-marker-alt mr-2"></i>
+            <span>New Delhi, India</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+      <div class="container mx-auto px-6 max-w-6xl text-center">
+        <p class="text-gray-400">
+          &copy; 2025 Harsh Vijay. Built with passion for finance and continuous
+          learning.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

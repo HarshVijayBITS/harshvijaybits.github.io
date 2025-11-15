@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Harsh Vijay - Home</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Inter", sans-serif;
+        line-height: 1.6;
+      }
+      .gradient-bg {
+        background: linear-gradient(
+          135deg,
+          #1e3a8a 0%,
+          #1e40af 50%,
+          #3b82f6 100%
+        );
+      }
+      .card-hover {
+        transition: all 0.3s ease;
+      }
+      .card-hover:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+      }
+      .section-divider {
+        background: linear-gradient(90deg, transparent, #e5e7eb, transparent);
+        height: 1px;
+        margin: 3rem 0;
+      }
+      body {
+        -webkit-print-color-adjust: exact;
+      }
+      .no-print {
+        display: none;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-50 text-gray-800">
+    <!-- Navbar -->
+    <nav class="fixed top-0 w-full z-50 bg-blue-900 shadow-md">
+      <div
+        class="container mx-auto px-6 max-w-6xl flex items-center justify-between py-4"
+      >
+        <!-- Logo / Name -->
+        <a href="/" class="text-2xl font-bold tracking-wide text-white"
+          >Harsh Vijay</a
+        >
+
+        <!-- Desktop Menu -->
+        <div class="hidden md:flex space-x-8 text-sm font-medium text-white">
+          <a href="/" class="hover:text-blue-200 text-blue-200 transition-colors">Home</a>
+          <a href="cv.html" class="hover:text-blue-200 transition-colors"
+            >Curriculum Vitae</a
+          >
+          <a href="beyond.html" class="hover:text-blue-200 transition-colors"
+            >Beyond the CV</a
+          >
+        </div>
+
+        <!-- Mobile Hamburger -->
+        <button id="menu-btn" class="md:hidden focus:outline-none text-white">
+          <i class="fas fa-bars text-2xl"></i>
+        </button>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="hidden md:hidden bg-blue-900">
+        <div
+          class="flex flex-col space-y-4 px-6 py-4 text-sm font-medium text-white"
+        >
+          <a href="/" class="hover:text-blue-200 text-blue-200 transition-colors">Home</a>
+          <a href="cv.html" class="hover:text-blue-200 transition-colors"
+            >Curriculum Vitae</a
+          >
+          <a href="beyond.html" class="hover:text-blue-200 transition-colors"
+            >Beyond the CV</a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <script>
+      // Mobile Menu Toggle
+      const menuBtn = document.getElementById("menu-btn");
+      const mobileMenu = document.getElementById("mobile-menu");
+
+      menuBtn.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+    </script>
+
+    <!-- Header Section -->
+    <header class="gradient-bg text-white py-16 pt-32 relative overflow-hidden">
+      <div class="container mx-auto px-6 max-w-6xl relative z-10">
+        <div class="flex flex-col lg:flex-row items-center justify-between">
+          <div class="lg:w-2/3 text-center lg:text-left mb-8 lg:mb-0 relative">
+            <h5 class="text-blue-100 font-light">Hi, I am</h5>
+            <h1 class="text-4xl lg:text-5xl font-bold mb-4 relative z-10">
+              Harsh Vijay
+            </h1>
+            <h2
+              class="text-xl lg:text-2xl font-light mb-6 text-blue-100 relative z-10"
+            >
+              VC & Investing Experience | MBA, FMS Delhi | BITS Pilani
+            </h2>
+            <div
+              class="flex flex-col sm:flex-row items-center justify-center lg:justify-start space-y-3 sm:space-y-0 sm:space-x-6 relative z-10"
+            >
+              <div class="flex items-center">
+                <i class="fas fa-envelope mr-3"></i>
+                <a
+                  href="/cdn-cgi/l/email-protection#85ede4f7f6edabf3ecb7b0c5e3e8f6abe0e1f0"
+                  class="hover:text-blue-200 transition-colors"
+                  ><span
+                    class="__cf_email__"
+                    data-cfemail="7119100302195f0718434431171c025f141504"
+                    >harsh.vi25[at]fms.edu</span
+                  ></a
+                >
+              </div>
+              <div class="flex items-center">
+                <i class="fas fa-map-marker-alt mr-3"></i>
+                <span>New Delhi, India</span>
+              </div>
+            </div>
+          </div>
+          <div class="lg:w-1/3 flex justify-center lg:justify-end">
+            <img
+              src="https://page.gensparksite.com/v1/base64_upload/dfa862c93059ea66628fc0b91bd3f410"
+              alt="Harsh Vijay Professional Photo"
+              class="h-80 lg:h-full w-auto object-cover shadow-2xl"
+            />
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- About Section -->
+    <section class="py-16 bg-white">
+      <div class="container mx-auto px-6 max-w-6xl">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl font-bold text-gray-800 mb-4">About Me</h2>
+          <div class="w-20 h-1 bg-blue-600 mx-auto"></div>
+        </div>
+        <div class="grid lg:grid-cols-2 gap-12 items-center">
+          <div>
+            <p class="text-lg text-gray-600 mb-6 leading-relaxed">
+              I’m a finance graduate from FMS Delhi with multi-fund venture
+              capital experience across Antler, Multiply Ventures, Ortella
+              Global Capital, and SucSEED. My work spans deal evaluation,
+              financial modelling, thesis development, and founder engagement.
+              With a Physics background from BITS Pilani and CFA Level 1 cleared
+              (90+ %ile), I enjoy exploring how capital, strategy, and execution
+              come together to build enduring companies.
+            </p>
+          </div>
+          <div class="grid grid-cols-2 gap-6">
+            <div class="bg-blue-50 p-6 rounded-lg text-center card-hover">
+              <div class="text-3xl font-bold text-blue-600 mb-2">CFA L1</div>
+              <div class="text-sm text-gray-600">90+ Percentile</div>
+            </div>
+            <div class="bg-green-50 p-6 rounded-lg text-center card-hover">
+              <div class="text-3xl font-bold text-green-600 mb-2">4+</div>
+              <div class="text-sm text-gray-600">Financial Models Built</div>
+            </div>
+            <div class="bg-purple-50 p-6 rounded-lg text-center card-hover">
+              <div class="text-3xl font-bold text-purple-600 mb-2">20+</div>
+              <div class="text-sm text-gray-600">Deals Sourced</div>
+            </div>
+            <div class="bg-orange-50 p-6 rounded-lg text-center card-hover">
+              <div class="text-3xl font-bold text-orange-600 mb-2">3.5</div>
+              <div class="text-sm text-gray-600">Years to Complete M.Sc.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="py-16 bg-gray-50">
+      <div class="container mx-auto px-6 max-w-6xl">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl font-bold text-gray-800 mb-4">Education</h2>
+          <div class="w-20 h-1 bg-blue-600 mx-auto"></div>
+        </div>
+        <div class="space-y-6">
+          <div class="bg-white rounded-lg shadow-lg p-8 card-hover">
+            <div
+              class="flex flex-col md:flex-row md:items-center md:justify-between"
+            >
+              <div>
+                <h3 class="text-xl font-semibold text-gray-800">
+                  Master of Business Administration (MBA)
+                </h3>
+                <p class="text-blue-600 font-medium">
+                  Faculty of Management Studies (FMS), Delhi
+                </p>
+                <p class="text-gray-600">Major: Finance & Strategy</p>
+              </div>
+              <div class="text-right mt-4 md:mt-0">
+                <p class="text-gray-500">Expected: April 2026</p>
+                <p class="text-sm text-gray-500">Class of 2026</p>
+              </div>
+            </div>
+          </div>
+          <div class="bg-white rounded-lg shadow-lg p-8 card-hover">
+            <div
+              class="flex flex-col md:flex-row md:items-center md:justify-between"
+            >
+              <div>
+                <h3 class="text-xl font-semibold text-gray-800">
+                  Master of Science (M.Sc.) in Physics
+                </h3>
+                <p class="text-blue-600 font-medium">BITS Pilani, Goa Campus</p>
+                <p class="text-gray-600">
+                  Integrated 4-year program completed in 3.5 years
+                </p>
+              </div>
+              <div class="text-right mt-4 md:mt-0">
+                <p class="text-gray-500">January 2022</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="py-16 gradient-bg text-white">
+      <div class="container mx-auto px-6 max-w-6xl text-center">
+        <h2 class="text-3xl font-bold mb-4">Let's Connect</h2>
+        <p class="text-xl text-blue-100 mb-8">
+          Interested in discussing Private Equity opportunities or just want to
+          connect?
+        </p>
+        <div
+          class="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-8"
+        >
+          <a
+            href="mailto:harsh.vi25@fms.edu"
+            class="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-blue-50 transition-colors flex items-center"
+          >
+            <i class="fas fa-envelope mr-2"></i>
+            Email Me
+          </a>
+          <div class="flex items-center text-blue-100">
+            <i class="fas fa-map-marker-alt mr-2"></i>
+            <span>New Delhi, India</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+      <div class="container mx-auto px-6 max-w-6xl text-center">
+        <p class="text-gray-400">
+          &copy; 2025 Harsh Vijay. Built with passion for finance and continuous
+          learning.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
