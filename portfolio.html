@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Harsh Vijay - Portfolio</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <style>
+      body {
+        font-family: "Inter", sans-serif;
+        line-height: 1.6;
+        background-color: white;
+      }
+      .gradient-bg {
+        background: linear-gradient(
+          135deg,
+          #1e3a8a 0%,
+          #1e40af 50%,
+          #3b82f6 100%
+        );
+      }
+    </style>
+  </head>
+
+  <body class="bg-gray-50 text-gray-800">
+    <!-- Navbar -->
+    <nav class="fixed top-0 w-full z-50 bg-blue-900 shadow-md">
+      <div
+        class="container mx-auto px-6 max-w-6xl flex items-center justify-between py-4"
+      >
+        <a href="/" class="text-2xl font-bold tracking-wide text-white">
+          Harsh Vijay
+        </a>
+
+        <div class="hidden md:flex space-x-8 text-sm font-medium text-white">
+          <a href="/" class="hover:text-blue-200 transition-colors">Home</a>
+          <a href="cv.html" class="hover:text-blue-200 transition-colors">
+            Curriculum Vitae
+          </a>
+          <a href="beyond.html" class="hover:text-blue-200 transition-colors">
+            Beyond the CV
+          </a>
+          <a
+            href="portfolio.html"
+            class="hover:text-blue-200 text-blue-200 transition-colors"
+          >
+            Portfolio
+          </a>
+        </div>
+
+        <button id="menu-btn" class="md:hidden focus:outline-none text-white">
+          <i class="fas fa-bars text-2xl"></i>
+        </button>
+      </div>
+
+      <div id="mobile-menu" class="hidden md:hidden bg-blue-900">
+        <div
+          class="flex flex-col space-y-4 px-6 py-4 text-sm font-medium text-white"
+        >
+          <a href="/" class="hover:text-blue-200 transition-colors">Home</a>
+          <a href="cv.html" class="hover:text-blue-200 transition-colors">
+            Curriculum Vitae
+          </a>
+          <a href="beyond.html" class="hover:text-blue-200 transition-colors">
+            Beyond the CV
+          </a>
+          <a
+            href="portfolio.html"
+            class="hover:text-blue-200 text-blue-200 transition-colors"
+          >
+            Portfolio
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <script>
+      const menuBtn = document.getElementById("menu-btn");
+      const mobileMenu = document.getElementById("mobile-menu");
+
+      menuBtn.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+    </script>
+
+    <!-- Portfolio Section -->
+    <section class="bg-white pt-32 pb-24">
+      <div class="container mx-auto px-6 max-w-6xl text-center">
+        <h2 class="text-5xl font-bold text-gray-800 mb-4">Portfolio</h2>
+        <div class="w-20 h-1 bg-blue-600 mx-auto mb-12"></div>
+
+        <!-- Portfolio Item -->
+        <div class="bg-white rounded-xl shadow-md hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 p-8 text-left">
+            <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-6">
+                <!-- Title -->
+                <div class="text-left">
+                <h3 class="text-xl font-semibold text-gray-800">
+                    Consumer Tech Sector Valuation Model
+                </h3>
+                <p class="text-blue-600 font-medium">
+                    Financial Model & Investment Memo
+                </p>
+                </div>
+                <!-- Year -->
+                <div class="text-sm text-gray-500 mt-2 sm:mt-0 text-left sm:text-right">
+                2025
+                </div>
+            </div>
+            <div class="grid md:grid-cols-2 gap-6 items-start text-left">
+                <!-- Description -->
+                <ul class="text-gray-600 space-y-2 text-sm list-none">
+                <li>• Built integrated 3-statement financial model with DCF valuation</li>
+                <li>• Performed sensitivity & scenario analysis</li>
+                <li>• Prepared investment memo & risk framework</li>
+                </ul>
+                <!-- Download Buttons -->
+                <div class="flex flex-col sm:flex-row gap-4 justify-start">
+                <a
+                    href="./valuation-model.xlsx"
+                    download
+                    class="flex items-center justify-center bg-green-600 text-white px-5 py-3 rounded-lg font-medium hover:bg-green-700 transition-colors"
+                >
+                    <i class="fas fa-file-excel mr-2"></i>
+                    Download Excel
+                </a>
+                <a
+                    href="./investment-memo.pptx"
+                    download
+                    class="flex items-center justify-center bg-orange-500 text-white px-5 py-3 rounded-lg font-medium hover:bg-orange-600 transition-colors"
+                >
+                    <i class="fas fa-file-powerpoint mr-2"></i>
+                    Download PPT
+                </a>
+                </div>
+            </div>
+        </div>
+        <!-- ------Portfolio Item End---- -->
+
+    </section>
+
+    <!-- Contact Section -->
+    <section class="py-16 gradient-bg text-white">
+      <div class="container mx-auto px-6 max-w-6xl text-center">
+        <h2 class="text-3xl font-bold mb-4">Let's Connect</h2>
+        <p class="text-xl text-blue-100 mb-8">
+          Interested in discussing Private Equity opportunities or just want to
+          connect?
+        </p>
+        <div
+          class="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-8"
+        >
+          <a
+            href="mailto:harsh.vi25@fms.edu"
+            class="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-blue-50 transition-colors flex items-center"
+          >
+            <i class="fas fa-envelope mr-2"></i>
+            Email Me
+          </a>
+          <div class="flex items-center text-blue-100">
+            <i class="fas fa-map-marker-alt mr-2"></i>
+            <span>New Delhi, India</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+      <div class="container mx-auto px-6 max-w-6xl text-center">
+        <p class="text-gray-400">
+          &copy; 2025 Harsh Vijay. Built with passion for finance and continuous
+          learning.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
